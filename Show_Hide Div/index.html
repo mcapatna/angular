@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+        <title>Loan
+        </title>
+    </head>
+    <body>
+
+        <div ng-app="app">
+
+            <div ng-controller="LoanController">
+                <table>
+                    <tr>
+                            <td>Name: <input type="text" ng-model="name"/></td>
+
+                    </tr>
+                         <tr>
+                            <td>Salary: <input type="text" ng-model="sal"/></td>
+
+                    </tr>
+                         <tr>
+                            <td>Deduction : <input type="text" ng-model="deduct"/></td>
+
+                    </tr>
+                   <tr>
+                            <td><input type="button" value="submit" ng-model="submit" ng-click="validate()"/></td>
+
+                    </tr> 
+                    
+                </table>
+<p>
+                        Show Branches:
+                        <input type="checkbox" ng-model="$root.showBranches"/>
+                    </p>
+            </div>
+            <div ng-controller="BranchController" ng-if="$root.showBranches">
+
+                <h3>
+                    Branch Location"
+                    
+                </h3>
+                <div> Search for a lo:
+                    <input type="text" ng-model="locationToFind">
+                <ul type="square">
+                    <li ng-repeat="branch in branches | filter:locationToFind | orderBy: 'toString()'"> {{branch}}</li>
+                   
+                </ul>
+
+<ul type="square">
+                    <li ng-repeat="branch in branches | filter:locationToFind | orderBy: '-toString()'"> {{branch}}</li>
+                   
+                </ul>
+
+            </div>
+            <script src="angular.min.js"/></script>
+
+            <script src="app.js"> </script>
+    </body>
+</html>
