@@ -1,0 +1,72 @@
+1) $ git clone https://github.com/angular/angular-seed.git
+2) visual Studio Code-->Open the folder of seed
+3) Directly integrates with Gits
+3) download the dependencies via C:\Users\Administrator\Desktop\Angular 
+
+Js\angular-seed>npm install
+
+4) node js is a command prompt which can run Javascript without a browser.
+5) npm install is used to download the dependency
+6) angular 4 does not work on IE
+7) npm install
+8) npm test run all the unit test
+9) karma is a test runner like Junit
+10) npm start will start the webserver for HTML and CSS and Javascripts.For Java you should run Tomcate/weblogic
+11) package-json is the place for basic command configuratrion.
+12) "code ."  to open the code file in visual studio code.
+-----------------------------------------------------------
+Ruby on rail is on server side
+MVC 
+	Model=Data,Business Logic,Validation 
+	Controller = incharge of Application Logic/Flow
+	View=Intract with the User UI rendering & user Input
+IN MVP controller becomes less powerful Controller does not have the power to transfer/decision
+MVVM model view view model = Have some data and some function assosiated witht the data for example silverlight,knowkout
+angular can used all the 3 framework so it can be considered as MV-* pattern.
+==============
+angular file is very heavy so suggested to load at the end of the page
+"use script" will enforce you to declare the java script variable before use.
+module is the root of angular.at least of one module shoule.
+angular.module("app",[]); first search for the module name app if not find will create the module. [] contains the dependency to run the module.
+for example there are 2 modules AppModules & accModule in which AppModule is depndendent on accModule.
+
+index.html-->AppModule-->AccModule
+To decalre AccModule==>angular.module("accModule",[]);-->searching for AccModule
+To decalre AppModule==>angular.module("AppModule",[accModule]);
+
+Creation of Controller
+-----------------------------
+		  
+moduleName.controller("controllerName" annonymus function)
+scope is a predefined service by angular which allow to interconnect both controller & view
+if a controller needs some predefine service give it inside the function as an argument
+For example
+		angular.module("app",[]).controller("DemoController",function DemoController($scope){
+			$scope.message="Hello Bro...";
+
+		  });
+
+
+
+If you want to execute the angular in a div use ng-app.
+To call a controller use ng-controller 
+{{}} is just like JSTL of JSP 
+Example
+	<div ng-app="app">
+		<div ng-controller="DemoController">
+			{{message}}
+		</div>
+	</div>
+
+ParseInt used to parse the text to String toString ()used to convert the String int int
+	
+Loan Calculator
+----------------
+Files need to be created
+1) app.js
+2) index.html
+
+
+
+
+

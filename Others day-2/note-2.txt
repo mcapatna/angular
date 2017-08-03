@@ -1,0 +1,16 @@
+Directive
+Tasks done by Directive
+1) Handling Data
+2) Updating DOM elements
+3) Adding Removing element 
+Types of scope of a directive 
+1) Inherited scope (inherited from outer level
+2) Isolated scope 
+
+
+
+
+Digest cycle: An automatic process run by angular on directives.Its a kind of infinte loop which is having some watch to monitor if something got change it will render the screen .
+
+Application Test
+https://docs.angularjs.org/tutorial
