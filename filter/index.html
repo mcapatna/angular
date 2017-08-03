@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Demo</title>
+</head>
+
+<body>
+<h2>Welcome.....</h2>
+<h2>Select a Branch to continue</h2>
+<div ng-app="app">
+
+    <div ng-controller="DemoController" ng-init="selectedBranch='marathalli'">
+        <div>
+            <h3> Branch Location</h3>
+            <select ng-model="selectedBranch">                
+                <option ng-repeat="branch in branches">
+                    {{branch}}
+                </option>
+            </select>
+        </div>
+    </div>
+   <a ng-href="mailto:{{selectedBranch | removespaces}}branch@xyz.com">
+       send Mail</a>
+   <!-- <img ng-src="images/{{selectedBranch | removespaces"}}.png height="100" width="120"/>    -->
+
+
+</div>
+<script src="angular.min.js"></script>
+<script src="app.js"> </script>
+
+</body>
+
+
+</html>
