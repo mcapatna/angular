@@ -48,4 +48,6 @@ $cookies Create and read cookies
 		--putObject()
 		--getObject()
 Animator
- 	
+ 	imediately invoked function object
+SSO ?
+Accor dian?
