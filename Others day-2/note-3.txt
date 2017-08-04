@@ -1,0 +1,28 @@
+
+odata.org
+Proxy for http://services.odata.org/V3/Northwind/Northwind.svc/ is 
+
+https://cors-anywhere.herokuapp.com
+
+complete URL to be hit https://cors-anywhere.herokuapp.com/http://services.odata.org/V3/Northwind/Northwind.svc/Products/?$select=ProductName,UnitPrice
+
+HttpServices in AngularJs
+get
+post 
+put
+delete
+
+Angular.mock.js
+http
+
+https://cors-anywhere.herokuapp.com/http://services.odata.org/V3/Northwind/Northwind.svc/Products/?$select=ProductName,UnitPrice&$filter=CategoryID eq "+$scope.selectedCategory
+11083
+
+Major services by $Http
+--$interpolate-"Price : {{product.UnitPrice}}"
+--$compile -compile directive into HTML
+-- $http- Access to services over HTTP via SOAP/REST
+--$routeProvider
+--$routeParam
+--$locaion :To read the URL & URI using absUrl().
+--window.location()
