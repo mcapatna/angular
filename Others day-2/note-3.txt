@@ -22,7 +22,13 @@ Major services by $Http
 --$interpolate-"Price : {{product.UnitPrice}}"
 --$compile -compile directive into HTML
 -- $http- Access to services over HTTP via SOAP/REST
---$routeProvider
---$routeParam
+--$routeProvider-- when() Read a URL & redirects to matching controller &template.
+					and otherwise() functions
+--$routeParam  
 --$locaion :To read the URL & URI using absUrl().
 --window.location()
+---
+1.6 and above		#!/view1
+1.5 and older		#!view1
+$anchorScroll
+$location.hash('bottom');
