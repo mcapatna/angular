@@ -1,0 +1,35 @@
+
+<html>
+    <head>
+        <title>Loan
+        </title>
+    </head>
+    <body>
+
+        <div ng-app="app">
+
+            <div ng-controller="DemoController">
+                {{message}}
+                <input type="button" value="Use Service" ng-click="UseService()"/>
+                <div ng-if="data">
+                <table border="1">
+                    <tr>
+                            <th>Name:</th>
+                            <th>Location:</th>
+
+                    </tr>
+                         <tr ng-repeat="item in data">
+                            <td> {{item.name}} </td>
+                            <td> {{item.location}} </td>
+
+                   
+
+                </table>
+
+            </div>
+         
+            <script src="angular.min.js"/></script>
+
+            <script src="app.js"> </script>
+    </body>
+</html>
