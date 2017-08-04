@@ -30,5 +30,22 @@ Major services by $Http
 ---
 1.6 and above		#!/view1
 1.5 and older		#!view1
-$anchorScroll
+$anchorScroll Used to go to last postion 
 $location.hash('bottom');
+$cacheFactory
+$locationProvider
+	-hasPrefix()-Used to tell angular from which part of the url to start reading
+	
+	
+	
+$log
+$exceptionHandler
+$interval 
+$timeout run a function after some dely
+$cookies Create and read cookies
+		--put()
+		--get()
+		--putObject()
+		--getObject()
+Animator
+	
